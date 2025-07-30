@@ -1,6 +1,6 @@
 :root {
     /* --bg-color: rgb(255 255 240); */
-    --card-border: 1px solid rgba(0 0 0 / 0.1);
+    --card-border: 1px solid rgba(255 255 255 / 0.2);
     --blur-bg: rgba(255 255 255 / 0.5);
     --blur-filter: blur(1.5em);
     --card-border-radius: 1em;
@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) { 
     :root {
-        --blur-bg: rgb(0 0 0 / 0.5);
+        /* --blur-bg: rgb(0 0 0 / 0.5); */
         --bg-color: rgb(0 0 0 / 0.5);
     }
 }
@@ -26,8 +26,8 @@
 body {
     margin: 0;
     min-height: 100dvh;
-    background-image: url("https://api.cxl2020mc.top");
-    background: url("https://api.cxl2020mc.top") var(--bg-color);
+    /* background-image: url("https://api.cxl2020mc.top"); */
+    background: url("https://api.cxl2020mc.top?idx=0");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
