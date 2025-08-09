@@ -12,11 +12,15 @@
     --card-border-radius: 1em;
 }
 
-@media (prefers-color-scheme: dark) { 
-    :root { 
+@media (prefers-color-scheme: dark) {
+    :root {
         --background-color: #333;
         --text-color: #fafafa;
         --blur-background-color: rgba(0 0 0 / 0.5);
+    }
+
+    img {
+        filter: brightness(75%);
     }
 }
 
