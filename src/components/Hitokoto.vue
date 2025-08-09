@@ -2,12 +2,17 @@
 import { ref, onMounted } from 'vue'
 import { Icon } from '@iconify/vue'
 
-const hitokoto = ref(":D 获取中...")
+const hitokoto = ref("一言获取中...")
 
 async function getHitokoto() {
-    const response = await fetch('https://v1.hitokoto.cn')
-    const data = await response.json()
-    hitokoto.value = `${data.hitokoto} —— ${data.from}`
+    try {
+        const response = await fetch('https://v1.hitokoto.cn')
+        const data = await response.json()
+        hitokoto.value = `${data.hitokoto} —— ${data.from}`
+    } catch (error) {
+        console.error(error)
+        hitokoto.value = `一言获取失败：${error}`
+    }
 }
 
 getHitokoto()
@@ -18,7 +23,7 @@ getHitokoto()
         <p id="hitokoto">
             {{ hitokoto }}
         </p>
-    <Icon class="refresh" icon="mdi:refresh" @Click="getHitokoto" />
+        <Icon class="refresh" icon="mdi:refresh" @Click="getHitokoto" />
     </div>
 
 </template>
