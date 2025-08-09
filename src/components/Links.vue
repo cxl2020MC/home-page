@@ -12,7 +12,7 @@ import { Icon } from "@iconify/vue";
         </div>
         <div class="card link">
             <Icon icon="mdi:microsoft-bing" />
-            <a href="https://github.com/cxl2020MC">
+            <a href="https://blog.cxl2020mc.top">
                 Blog
             </a>
         </div>
