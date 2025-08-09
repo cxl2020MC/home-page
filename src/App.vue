@@ -74,7 +74,6 @@ main {
 @media (max-width: 50em) {
   .main-content {
     grid-template-columns: 1fr;
-
   }
 }
 

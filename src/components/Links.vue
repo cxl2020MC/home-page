@@ -23,9 +23,18 @@ import { Icon } from "@iconify/vue";
 .links {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    /* justify-content: center; */
+    /* flex-direction: row; */
     /* flex-grow:  1; */
     gap: 1em;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    flex-grow: 1;
 }
 
 .link a {
