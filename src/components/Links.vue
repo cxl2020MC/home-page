@@ -35,6 +35,7 @@ import { Icon } from "@iconify/vue";
     justify-content: center;
     gap: 0.5em;
     flex-grow: 1;
+    flex-basis: 5em;
 }
 
 .link a {
