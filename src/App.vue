@@ -67,6 +67,13 @@ main {
   align-items: start; */
 }
 
+@media (max-width: 50em) {
+  .main-content {
+    grid-template-columns: 1fr;
+
+  }
+}
+
 .left {
   display: flex;
   flex-direction: column;

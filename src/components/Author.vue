@@ -19,7 +19,7 @@
 }
 
 .author-image {
-    width: 10em;
+    width: 7em;
     max-width: 70%;
 }
 
