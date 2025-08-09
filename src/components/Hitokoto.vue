@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { Icon } from '@iconify/vue'
 
 const hitokoto = ref(":D 获取中...")
 
-fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-        // document.getElementById('hitokoto_text').href = data.url
-        // document.getElementById('hitokoto_text').innerText = data.hitokoto
-        hitokoto.value = `${data.hitokoto} —— ${data.from}`
-    })
-    .catch(console.error)
+async function getHitokoto() {
+    const response = await fetch('https://v1.hitokoto.cn')
+    const data = await response.json()
+    hitokoto.value = `${data.hitokoto} —— ${data.from}`
+}
+
+getHitokoto()
 </script>
 
 <template>
@@ -18,6 +18,7 @@ fetch('https://v1.hitokoto.cn')
         <p id="hitokoto">
             {{ hitokoto }}
         </p>
+    <Icon class="refresh" icon="mdi:refresh" @Click="getHitokoto" />
     </div>
 
 </template>
@@ -26,5 +27,9 @@ fetch('https://v1.hitokoto.cn')
 #hitokoto {
     /* font-size: 1.5rem; */
     margin: 0;
+}
+
+.refresh {
+    cursor: pointer;
 }
 </style>

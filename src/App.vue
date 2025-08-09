@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Author from './components/Author.vue';
 import Hitokoto from './components/Hitokoto.vue';
+import Links from './components/Links.vue';
 </script>
 
 <template>
@@ -8,8 +9,15 @@ import Hitokoto from './components/Hitokoto.vue';
     src="https://cxl2020mc-1304820025.file.myqcloud.com/img/%E5%A3%81%E7%BA%B8/%E7%BB%9D%E5%8C%BA%E9%9B%B6/24853e7a2fcd986abcddb05075c79942.png"
     alt="">
   <main>
-    <Author />
-    <Hitokoto />
+    <div class="main-content">
+      <Author />
+      <div class="left">
+        <Hitokoto />
+        <Links />
+      </div>
+
+    </div>
+
   </main>
 </template>
 
@@ -27,10 +35,23 @@ import Hitokoto from './components/Hitokoto.vue';
 
 main {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  height: 100vh;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 20em);
+  grid-auto-flow: row dense;
+  gap: 1em;
+  /* justify-items: start;
+  align-items: start; */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
   gap: 1em;
 }
 </style>
