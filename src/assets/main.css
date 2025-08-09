@@ -1,0 +1,28 @@
+@import url(https://cdn-font.hyperos.mi.com/font/css?family=MiSans_VF:VF:Chinese_Simplify,Latin&display=swap);
+
+:root {
+    --background-color: #fafafa;
+    --text-color: #333;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+    --blur-background-color: rgba(255 255 255 / 0.5);
+    --blur-background-color-hover: rgba(255 255 255 / 0.3);
+    --blur-filter: blur(1em);
+    --card-border: 1px solid rgba(255 255 255 / 0.5);
+    --card-border-radius: 1em;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "MiSans VF", system-ui, sans-serif;
+}
+
+.card {
+    background-color: var(--blur-background-color);
+    backdrop-filter: var(--blur-filter);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    padding: 1em;
+}
