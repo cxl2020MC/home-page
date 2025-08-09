@@ -27,6 +27,10 @@ body {
     font-family: "MiSans VF", system-ui, sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .card {
     background-color: var(--blur-background-color);
     backdrop-filter: var(--blur-filter);
