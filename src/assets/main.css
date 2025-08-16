@@ -1,6 +1,10 @@
 @import url(https://cdn-font.hyperos.mi.com/font/css?family=MiSans_VF:VF:Chinese_Simplify,Latin&display=swap);
 
 :root {
+    color-scheme: light dark;
+}
+
+:root {
     --background-color: #fafafa;
     --text-color: #333;
     /* --link-color: #007bff;
