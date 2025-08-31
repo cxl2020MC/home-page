@@ -61,9 +61,8 @@ main {
 }
 
 .main-content {
-  display: grid;
-  grid-template-columns: repeat(2, 20em);
-  grid-auto-flow: row dense;
+  display: flex;
+  max-width: 50em;
   gap: 1em;
   /* justify-items: start;
   align-items: start; */
@@ -71,7 +70,7 @@ main {
 
 @media (max-width: 50em) {
   .main-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 

@@ -11,7 +11,7 @@
 
 <style scoped>
 .author {
-    /* max-width: 20em; */
+    flex-basis: 15em;
     display: flex;
     align-items: center;
     justify-content: center;
