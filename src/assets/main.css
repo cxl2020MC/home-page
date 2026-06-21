@@ -9,8 +9,8 @@
     --text-color: #333;
     /* --link-color: #007bff;
     --link-hover-color: #0056b3; */
-    --blur-background-color: rgba(255 255 255 / 0.5);
-    --blur-background-color-hover: rgba(255 255 255 / 0.3);
+    --blur-background-color: rgba(255 255 255 / 0.3);
+    --blur-background-color-hover: rgba(255 255 255 / 0.5);
     --blur-filter: blur(1em);
     --card-border: 1px solid var(--blur-background-color);
     --card-border-radius: 1em;
@@ -20,7 +20,7 @@
     :root {
         --background-color: #333;
         --text-color: #fafafa;
-        --blur-background-color: rgba(0 0 0 / 0.5);
+        --blur-background-color: rgba(0 0 0 / 0.3);
     }
 
     img {
