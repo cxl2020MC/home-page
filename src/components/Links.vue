@@ -1,23 +1,29 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
+// import { Icon } from "@iconify/vue";
+import IconGithub from "~icons/fa7-brands/github"
+import IconBlog from "~icons/fa7-solid/blog"
+import IconQQ from "~icons/fa7-brands/qq"
 </script>
 
 <template>
     <div class="links">
         <div class="card link">
-            <Icon icon="fa7-brands:github" />
+            <!-- <Icon icon="fa7-brands:github" /> -->
+            <IconGithub />
             <a href="https://github.com/cxl2020MC">
                 GitHub
             </a>
         </div>
         <div class="card link">
-            <Icon icon="fa7-solid:blog" />
+            <!-- <Icon icon="fa7-solid:blog" /> -->
+            <IconBlog />
             <a href="https://blog.cxl2020mc.top">
                 Blog
             </a>
         </div>
         <div class="card link">
-            <Icon icon="fa7-brands:qq" />
+            <!-- <Icon icon="fa7-brands:qq" /> -->
+            <IconQQ />
             <a
                 href="https://qun.qq.com/universal-share/share?ac=1&authKey=4On4X39JdY%2BeTrERg0smNXlyUEPMe1DvML1fcauM6Bp3S26nUPuM4NF3WQleyDwj&busi_data=eyJncm91cENvZGUiOiI4NjA3Njk3NjQiLCJ0b2tlbiI6IkNZQmdWTWlMaVJjd3UxQWp2akVEd0owMkxnMVBjUldoMUtpNUhZa0thOUZDandYUWgxMXlsbnQreUcxZWxxN0MiLCJ1aW4iOiIxMTc2NTAzOTMwIn0%3D&data=5e386OjhF4Ed1Mclz6OTsbgMvTEYdwbe2l_YNFWFXMEB5VAmnPV5GiUeTDqGCwGVakdd4wz5F631nHZ_a7YIaQ&svctype=4&tempid=h5_group_info">
                 QQ群

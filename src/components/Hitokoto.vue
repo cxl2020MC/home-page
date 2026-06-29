@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { Icon } from '@iconify/vue'
+import IconRefresh from "~icons/mdi/refresh"
+
 
 const hitokoto = ref("一言获取中...")
 
@@ -23,7 +25,8 @@ getHitokoto()
         <p id="hitokoto">
             {{ hitokoto }}
         </p>
-        <Icon class="refresh" icon="mdi:refresh" @Click="getHitokoto" />
+        <!-- <Icon class="refresh" icon="mdi:refresh" @Click="getHitokoto" /> -->
+        <IconRefresh class="refresh" @Click="getHitokoto" />
     </div>
 
 </template>
