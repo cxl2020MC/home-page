@@ -58,9 +58,11 @@ main {
   height: 100vh;
   height: 100dvh;
   padding: 1em;
+  overflow: auto;
 }
 
 .main-content {
+  max-height: 100%;
   display: flex;
   max-width: 50em;
   gap: 1em;
