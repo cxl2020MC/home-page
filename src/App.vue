@@ -37,11 +37,15 @@ const background_url = ref(img_list[Math.floor(Math.random() * img_list.length)]
     </div>
 
   </main>
+  <footer>
+    <p>code by cxl2020MC</p>
+    <p>power by vue.js</p>
+  </footer>
 </template>
 
 <style scoped>
 .background {
-  position: absolute;
+  position: fixed;
   object-fit: cover;
   top: 0;
   left: 0;
@@ -59,6 +63,23 @@ main {
   height: 100dvh;
   padding: 1em;
   overflow: auto;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  /* font-size: small; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blur-background-color);
+  backdrop-filter: var(--blur-filter);
+}
+
+footer p {
+  margin: 0;
 }
 
 .main-content {
