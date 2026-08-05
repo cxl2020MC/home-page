@@ -74,14 +74,12 @@ footer {
 .footer-content {
   width: 100%;
   text-align: center;
-  padding: 1em;
+  /* padding: 1em; */
   /* font-size: small; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--blur-background-color);
-  backdrop-filter: var(--blur-filter);
 }
 
 .footer-content p {
