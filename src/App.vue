@@ -38,8 +38,10 @@ const background_url = ref(img_list[Math.floor(Math.random() * img_list.length)]
 
   </main>
   <footer>
-    <p>code by cxl2020MC</p>
-    <p>power by vue.js</p>
+    <div class="card footer-content">
+      <p>code by cxl2020MC</p>
+      <p>power by vue.js</p>
+    </div>
   </footer>
 </template>
 
@@ -66,19 +68,21 @@ main {
 }
 
 footer {
+  margin: 1em;
+}
+
+.footer-content {
   width: 100%;
   text-align: center;
-  padding: 1em;
+  /* padding: 1em; */
   /* font-size: small; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--blur-background-color);
-  backdrop-filter: var(--blur-filter);
 }
 
-footer p {
+.footer-content p {
   margin: 0;
 }
 
