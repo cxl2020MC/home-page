@@ -11,21 +11,21 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
-    "vue": "^3.5.41"
+    "vue": "^3.5.42"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.517",
+    "@iconify/json": "^2.2.525",
     "@iconify/vue": "^5.0.1",
     "@tsconfig/node-lts": "^24.0.1",
-    "@types/node": "^26.2.0",
+    "@types/node": "^26.4.1",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vue/tsconfig": "^0.9.1",
     "npm-run-all2": "^9.0.3",
     "typescript": "^6.0.3",
     "unplugin-icons": "^23.0.1",
-    "vite": "^8.2.1",
+    "vite": "^8.2.2",
     "vite-plugin-vue-devtools": "^8.2.1",
-    "vue-tsc": "^3.3.10"
+    "vue-tsc": "^3.3.11"
   },
-  "packageManager": "pnpm@12.0.0-rc.6+sha512.3927fce49c3054b7e5541dc720bce7b4ebab07f4562fa6ffce7b39720a25e6a767d76384984e2265c800799613f7f79c5c422e9f5cedc9b66cfffd08ca3c77a9"
+  "packageManager": "pnpm@12.3.4+sha512.961aa41fb077da3a04a441d9f8e15ebc0c96da8ef710b2eb67bf9ee7cb0610eabd48f1fd85f51cffe73846785fa0f87c56a3a872a1d893f8446741b5cce45457"
 }
