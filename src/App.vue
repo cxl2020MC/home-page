@@ -41,6 +41,7 @@ const background_url = ref(img_list[Math.floor(Math.random() * img_list.length)]
     <div class="card footer-content">
       <p>code by cxl2020MC</p>
       <p>power by vue.js</p>
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备2026134567号-1</a>
     </div>
   </footer>
 </template>
