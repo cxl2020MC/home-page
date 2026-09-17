@@ -42,6 +42,7 @@ const background_url = ref(img_list[Math.floor(Math.random() * img_list.length)]
       <p>code by cxl2020MC</p>
       <p>power by vue.js</p>
       <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备2026134567号-1</a>
+      <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002017079" rel="noreferrer" target="_blank"><img src="/logo01.6189a29f.png" class="gabeian-logo" />粤公网安备44030002017079号</a>
     </div>
   </footer>
 </template>
@@ -85,6 +86,14 @@ footer {
 
 .footer-content p {
   margin: 0;
+}
+
+.gabeian-logo {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  vertical-align: middle;
 }
 
 .main-content {
